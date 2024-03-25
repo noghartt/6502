@@ -1,7 +1,8 @@
 pub const MEMORY_SIZE: usize = 0xFFFF; // 65535
+pub const MEMORY_STACK_START: u16 = 0x0100;
+pub const MEMORY_STACK_END: u16 = 0x01FF;
 pub const MEMORY_ADDRESS_RAM_START: u16 = 0x0200;
 pub const MEMORY_ADDRESS_RAM_END: u16 = 0xFFFF;
-// TODO: Implement the last memory address to target the BRK and other related instructions
 pub const MEMORY_RAM_SIZE: u16 = MEMORY_ADDRESS_RAM_END - MEMORY_ADDRESS_RAM_START;
 
 #[derive(Debug)]

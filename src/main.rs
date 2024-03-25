@@ -7,6 +7,4 @@ mod fixtures;
 
 fn main() {
     let cpu = cpu::Cpu::new();
-
-    println!("{:#?}", cpu);
 }
